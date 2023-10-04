@@ -1,5 +1,38 @@
 #include <iostream>
 
+void zinsen()
+{
+    double capitalStock = 1000;
+    double startCapitalStock = capitalStock;
+    double interestRate = 5.0;
+    int    numberYears = 10;
+
+    std::cout << "Zinstabelle fuer Grundkapital: " << capitalStock << std::endl;
+    std::cout << "Verzinsung:                    " << interestRate << std::endl;
+    std::cout << "=====================================" << std::endl;
+    std::cout << "Kapitalstand zum Jahresende:" << std::endl << std::endl;
+
+    int year = 0;
+
+    while (year < numberYears)
+    {
+        double interest = (capitalStock / 100.0) * interestRate;
+
+        // auf addieren        
+        // capitalStock = capitalStock + interest;
+        // oder kürzer
+        capitalStock += interest;
+
+        std::cout << "Jahr: " << (year + 1) << "    Kapital: " << capitalStock << std::endl;
+
+        year++;
+    }
+
+    std::cout 
+        << "Aus " << startCapitalStock  << " Grundkapital wurden in " << year  
+        << "Jahren " << capitalStock <<  " Euro" << std::endl;
+}
+
 void teufel()
 {
     int number;

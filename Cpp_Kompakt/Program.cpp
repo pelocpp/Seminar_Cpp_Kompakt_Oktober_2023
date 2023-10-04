@@ -15,6 +15,7 @@ void test_switch();
 void test_break_continue();
 void test_typ_wandlung();
 void test_divisionen();
+void zinsen();
 
 // Übungen
 void teufel();
@@ -23,7 +24,7 @@ void teufel();
 
 int main()
 {
-	test_divisionen();
+	zinsen();
 
 	// Ausgabe in der Konsole // cout == console output
 	// Entwickler: << sieht wie ein Pfeil aus :-)

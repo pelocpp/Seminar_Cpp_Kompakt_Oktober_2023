@@ -297,3 +297,5 @@ a) Ganzzahlige Division
 b) Gleitpunkt Division
 
 ======================================================
+Prozeduler Anteil von C++
+======================================================
