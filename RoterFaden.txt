@@ -1,0 +1,28 @@
+Parcours durch C/C++:
+=====================
+
+Variablen 
+Datentypen
+
+Kontrollstrukturen (for, while)
+
+Logische Operatoren
+-- && , || , !
+-- Klammern
+
+Felder / Arrays
+
+Strukturen
+
+Unterprogramme
+-- Prozedur (ohne Ergebnis)
+-- Funktion (mit Ergebnis)
+
+Aufbau eine C/C++-Programms
+-- main
+-- Vorwärtsdeklaration
+
+
+
+
+

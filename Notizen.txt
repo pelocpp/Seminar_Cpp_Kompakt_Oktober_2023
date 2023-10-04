@@ -120,4 +120,159 @@ ii) Ich muss eine Messreihe mit 1.000.000 Daten verarbeiten / auswerten:
     Fazit: Für "viele" Variablen würde ich für 'short' gehen
 
 
+===========================================================
+
+Begriff: struct
+
+== Array:      Viele Daten desselben Typs (Messreihe)
+
+== Struktur:   Ist ein Oberbegriff für viele Daten, in der Regel unterschiedlichen Typs 
+
+   Beispiel:   Student:   Namen (Zeichenkette),
+                          Alter (int)
+                          Wohnort (Zeichenkette)
+                          PLZ   (int)
+
+   Beispiel:   Uhrzeit    Stunden, Minuten, Sekunden
+
+
+Begriff: struct  ====>  Vorbereitung: Objekt-Orientierung
+
+==========================================================
+
+Wie lange leben Variablen ???
+
+Welche Lebenszeit haben Variablen ???
+
+a) Globale Variablen:
+
+   Gelten für die gesamte Laufzeit des Programms.
+
+   Vereinbarung: Auf der "obersten Ebene" (top-level) des Programms.
+
+   Sind überall verwendbar.
+
+b) Lokale Variablen:
+
+   Gelten für die Ausführungszeit eines Unterprogramms.
+
+   "Das ist nicht sehr viel"
+
+   ==> Sind eher für Zwischenergebnisse geeignet
+
+   ==> Können aber als Parameter an andere Unterprogramme weitergereicht werden
+
+c) Dynamisch allokierte Variablen
+
+   new // malloc
+
+   Leben vom Aufruf von new bis zur Zerstörung (delete // free)
+
+======================================================
+
+Was ist ein Unterprogramm:
+
+Fasst eine Reihe von Anweisungen unter einem NAMEN zusammen:
+
+void ausgabe()
+{
+	std::cout << "Dies ist ein C++ Kompakt Seminar";
+}
+
+Name: ausgabe
+
+Was bedeutet 'void': void steht für "nichts"
+Dieses Unterprogramm hat KEIN Ergebnis.
+
+Wozu die Klammern () ?
+
+Sind für Parameter: 
+
+Was ist ein Parameter: Ist ein Stellvertreter für einen realen Wert.
+
+
+Ein Unterprogramm kann ein Ergebnis haben oder auch nicht:
+
+Nomenklatur // Sprechweise:
+
+Unterprogramm ohne Ergebnis: Prozedur
+
+    Umsetzung in C++: void als Rückgabetyp
+
+Unterprogramm mit Ergebnis:  Funktion
+
+===================================================
+
+Aufbau eine C/C++-Programms:
+
+Einsprungpunkt ist main:
+
+-- In main können weitere Unterprogramme // Funktionen aufgerufen werden.
+
+-- Der Name eines Unterprogramms muss bekannt sein:
+
+   Jede Datei wird EINMAL von oben nach unten gelesen // übersetzt.
+
+
+======================================================
+
+Logische Operatoren:
+
+Verknüpfung von Bedingungen:  
+
+Logisches UND:    &&
+
+Logisches ODER:   ||
+
+Logisches NOT:    !      false ==> true // true ==> false
+
+
+Operatoren   VORRANG:  
+
+Ist in einer Vorrang-Tabelle festgelegt.
+
+Nebenbemerkung:
+
+Was sind & und | ??? 
+
+Das sind binäre Verknüpfungen.
+
+======================================================
+
+Binäre Verknüpfungen:
+
+Haben mit Bit-Masken zu tun:
+
+0101
+0100
+
+Binär UND verknüpft:  Ist Operator &
+
+0100
+
+Binär ODER verknüpft: Ist Operator |
+
+0101
+
+======================================================
+
+Wiederholungsanweisung:
+
+-- for
+-- while
+-- do while
+
+======================================================
+
+Frage: Felder und falscher Index
+
+a) KEINE Überprüfung des Index
+
+b) Es kommt zu einem Absturz bzw. zu einem undefinierten Verhalten des Programms.
+
+======================================================
+
+Rest bei einer Division:
+
+Operator %:   Modulo - Operator
 
