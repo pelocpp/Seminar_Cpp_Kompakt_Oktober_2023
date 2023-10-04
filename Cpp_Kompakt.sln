@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp_Kompakt", "Cpp_Kompakt\Cpp_Kompakt.vcxproj", "{02C4F627-1DE4-4E63-8F68-49A95DBB62AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{9814AB76-94BA-4DE3-A663-FE7E93915AEA}"
+	ProjectSection(SolutionItems) = preProject
+		Notizen.txt = Notizen.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02C4F627-1DE4-4E63-8F68-49A95DBB62AF}.Debug|x64.ActiveCfg = Debug|x64
+		{02C4F627-1DE4-4E63-8F68-49A95DBB62AF}.Debug|x64.Build.0 = Debug|x64
+		{02C4F627-1DE4-4E63-8F68-49A95DBB62AF}.Debug|x86.ActiveCfg = Debug|Win32
+		{02C4F627-1DE4-4E63-8F68-49A95DBB62AF}.Debug|x86.Build.0 = Debug|Win32
+		{02C4F627-1DE4-4E63-8F68-49A95DBB62AF}.Release|x64.ActiveCfg = Release|x64
+		{02C4F627-1DE4-4E63-8F68-49A95DBB62AF}.Release|x64.Build.0 = Release|x64
+		{02C4F627-1DE4-4E63-8F68-49A95DBB62AF}.Release|x86.ActiveCfg = Release|Win32
+		{02C4F627-1DE4-4E63-8F68-49A95DBB62AF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {109E6322-D782-4C58-A790-08ACB3B669D0}
+	EndGlobalSection
+EndGlobal

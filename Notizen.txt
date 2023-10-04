@@ -1,0 +1,42 @@
+C++ Kompakt
+===========
+
+Christian // Felix (Remote)
+
+Peter Loos
+
+C/C++,  C#, Java, JavaScript, Mobile Programming (Java)
+
+Back to the Roots: C++
+
+Vorraussetzungen:
+
+ST // Structured Text   
+
+C#
+
+====================================
+
+Tools:
+
+i) Visual Studio 
+
+ii) Github.com
+
+====================================
+
+Getting Started:
+
+===> "Hello World"
+
+===> OO  // Objekt Orientierung
+
+====================================
+
+C++:
+
+Editor  ==> Quelltext verfassen
+
+Tool:   Überprüft den Quelltext:   Compiler // Übersetzer
+
+
