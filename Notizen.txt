@@ -37,6 +37,87 @@ C++:
 
 Editor  ==> Quelltext verfassen
 
-Tool:   Überprüft den Quelltext:   Compiler // Übersetzer
+Tool:   a) Überprüft den Quelltext (Syntax):   Compiler // Übersetzer
+
+        b) Wenn alles Okay: Wird Maschinencode erzeugt.
+
+        zB
+
+        C:\Peter_Loos\Cpp_Kompakt\x64\Debug\Cpp_Kompakt.exe
+
+        Eine Datei mit der Endung .exe: Das ist Maschinencode
+
+Wie wird das Programm ausgeführt?
+
+i)   Mit dem Windows Datei Explorer (Doppelclick)
+
+ii)  In einer Windows Konsole
+
+iii) Mit dem Visual Studio:   Debuggen => Starten ohne Debuggen
+
+
+
+Syntax: Grammatik  // Satzbau 
+
+====================================
+
+Jedes C/C++ - Programm hat einen Einsprungpunkt // Startpunkt:
+
+Unterprogramm mit Namen 'main'
+
+====================================
+
+ToDo - Liste:
+
+== Namensräume
+
+====================================
+
+Bemerkungen zu "Hello World"
+
+== C/C++: Format - freie Sprache 
+
+== Wozu "return 1;"   
+
+   Ist eher für "Skript"-Programmierung: Skripte, die mit dem Betriebssystem interagieren
+
+      // Linux: Shell-Programmierung
+      // Windows: Power Shell
+
+====================================
+
+Variablen und Datentypen:
+
+	short s;       // 2 bytes           maximal 32.767
+	int n;         // 4 bytes           maximal 2.147.483.647
+	long l;        // 4 oder 8 bytes
+	long long ll;  // 8 bytes
+
+Frage:
+
+Meine Werte, die ich verarbeiten möchte, sind im Bereich von 0 bis 999.
+
+Welchen Datentyp für meine Variablen verwende ich ?
+
+a) Man nimmt short
+
+b) Wir haben genügend Speicher ==> int
+
+i)  "Man nimmt short":  Die CPU (Recheneinheit) kennt weder short noch int:
+
+                        Sie arbeitet mit einem Akku (Akkumulator) // Register
+
+                        Hat eine Breite (Bits) - entspricht im Regelfall 'int'
+
+    Fazit: Für "einzelne" Variablen würde ich für 'int' gehen
+
+ii) Ich muss eine Messreihe mit 1.000.000 Daten verarbeiten / auswerten:
+
+    Ein Feld // Array: Unterschied:  Feld mit einer Million Variablen vom Typ short
+
+                                     Feld mit einer Million Variablen vom Typ int
+
+    Fazit: Für "viele" Variablen würde ich für 'short' gehen
+
 
 
