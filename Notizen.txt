@@ -227,6 +227,15 @@ Logisches ODER:   ||
 Logisches NOT:    !      false ==> true // true ==> false
 
 
+Vergleich:
+
+Gleichheit:  ==
+
+( das einfache = ist auf Grund der Wertzuweisung vergeben // a = 123; ) 
+
+Ungleichheit:  !=
+
+
 Operatoren   VORRANG:  
 
 Ist in einer Vorrang-Tabelle festgelegt.
@@ -276,3 +285,15 @@ Rest bei einer Division:
 
 Operator %:   Modulo - Operator
 
+======================================================
+
+C++ // Prozeduralen Anteil  // C 
+
+======================================================
+
+2 Divisionen:
+
+a) Ganzzahlige Division
+b) Gleitpunkt Division
+
+======================================================

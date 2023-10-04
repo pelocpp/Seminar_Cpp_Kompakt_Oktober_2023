@@ -4,7 +4,12 @@ Parcours durch C/C++:
 Variablen 
 Datentypen
 
-Kontrollstrukturen (for, while)
+Typwandlung
+-- explizit ("type cast"), implizit
+
+Kontrollstrukturen
+-- for, while, do while, switch
+-- break und continue
 
 Logische Operatoren
 -- && , || , !

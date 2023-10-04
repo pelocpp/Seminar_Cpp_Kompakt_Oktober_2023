@@ -11,12 +11,19 @@ void test_operatoren_02();
 void test_while();
 void test_fehler();
 void test_gerade_ungerade();
+void test_switch();
+void test_break_continue();
+void test_typ_wandlung();
+void test_divisionen();
+
+// Übungen
+void teufel();
 
 // ======================================================
 
 int main()
 {
-	test_gerade_ungerade();
+	test_divisionen();
 
 	// Ausgabe in der Konsole // cout == console output
 	// Entwickler: << sieht wie ein Pfeil aus :-)
@@ -266,6 +273,113 @@ void test_gerade_ungerade()
 	}
 }
 
+
+void test_switch()
+{
+	// Fallunterscheidung 
+
+	int n = 2;
+
+	// n wird neu berechnet .........
+
+	switch (n)   // n = 1
+	{
+	case 1:
+		// ...
+		std::cout << "EINS" << std::endl;
+		break;
+
+	case 2:
+		// ...
+		std::cout << "ZWEI" << std::endl;
+		break;
+
+	case 3:
+		// ...
+		std::cout << "DREI" << std::endl;
+		break;
+
+	case 4:
+	case 5:
+		// ...
+		std::cout << "VIER oder FUENF" << std::endl;
+		break;
+
+	default:
+		std::cout << "Anderer Wert" << std::endl;
+		break;
+	}
+
+	std::cout << "Hier geht es weiter ..." << std::endl;
+}
+
+void test_break_continue()
+{
+	// Summe aller ungeraden Zahlen von 1 bis einschließlich 10
+
+	int summe = 0;
+
+	int start = 1;
+
+	// Endlos-Schleife
+	while (true) {
+
+		// Ignoriere die geraden Zahlen
+		if (start % 2 == 0) {
+			start++;
+			continue;  // Springe nach oben in die Auswertung der Bedingung
+		}
+
+		// Abbruch Kriterium
+		if (start >= 11) {
+			break;   // Verlasse die while-Schleife
+		}
+
+		// aktualisiere Variable summe
+		summe = summe + start;
+		// oder kuerzer
+		// summe += start;
+
+		start++;
+	}
+
+	std::cout << "Hier geht es weiter ..." << std::endl;
+}
+
+void test_typ_wandlung()
+{
+	int n = 123;
+
+	double d = 654.321;
+
+	// Wertzuweisung // Assignment
+	// int m;
+
+	// Zulässig:
+	// d = n;  // Ein "kleinerer" Wert passt in eine Variable eines "groesseren" Datentyps
+
+	// Auch zulässig - ACHTUNG: Es ist ein Datenverlust vorhanden
+	// Dies wird durch eine Warning gemeldet
+	// Diese Warnung kann / sollte man "quittieren": Typwandlung
+	// EXPLIZITE Typumwandlung
+	n = (int) d;  // Typ Cast == Typumwandlung
+
+	// IMPLIZIT Typumwandlung , eben mit Warnung
+	n = d;
+}
+
+void test_divisionen()
+{
+	int x, y;
+	// double y;
+
+	double z;
+
+	x = 3;
+	y = 0;
+
+	z = (double) x / y;
+}
 
 // ======================================================
 
