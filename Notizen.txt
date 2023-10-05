@@ -301,3 +301,17 @@ b) Gleitpunkt Division
 ======================================================
 Prozeduler Anteil von C++
 ======================================================
+
+3. Tag:
+
+== OO an einem realen Beispiel: Klasse std::string
+
+== Namensräume
+
+== Ein-/Ausgabe (Operator <<)
+
+== Vererbung
+
+== Standard-Bibliothek
+
+

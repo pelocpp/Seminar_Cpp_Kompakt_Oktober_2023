@@ -147,3 +147,95 @@ void Rectangle::print() const
 
     std::cout << std::endl;
 }
+
+bool Rectangle::equals(Rectangle other)
+{
+    //if (m_top != other.getTop())
+    //    return false;
+    // oder
+
+    if (m_top != other.m_top)
+        return false;
+    else if (m_left != other.m_left)
+        return false;
+    else if (m_width != other.m_width)
+        return false;
+    else if (m_height != other.m_height)
+        return false;
+    else 
+        return true;
+}
+
+// operators
+//bool Rectangle::operator== (Rectangle other)
+//{
+//    if (m_top != other.m_top)
+//        return false;
+//    else if (m_left != other.m_left)
+//        return false;
+//    else if (m_width != other.m_width)
+//        return false;
+//    else if (m_height != other.m_height)
+//        return false;
+//    else
+//        return true;
+//}
+//
+//bool Rectangle::operator!= (Rectangle other)
+//{
+//    // wenn es geht: Quellcode wieder verwenden
+//
+//    bool result = true;
+//
+//    result = ! ( *this == other );   // this ist eine Adresse (Zeiger), deshalb muss für den Wert ein * davor
+//     
+//    return result; 
+//}
+
+// ====================================
+
+// globale Funktion
+
+// Diese Realisierung basiert auf der öffentlichen Schnittstelle
+// der Klasse Rectangle
+// Anders formuliert: Die Klasse Rectangle (ihr Entwickler) weiß nichts davon.
+
+//bool operator == (Rectangle left, Rectangle right)
+//{
+//    //if (m_top != other.getTop())
+//    //    return false;
+//    // oder
+//
+//    if (left.getTop() != right.getTop())
+//        return false;
+//    else if (left.getLeft() != right.getLeft())
+//        return false;
+//    else if (left.getWidth() != right.getWidth())
+//        return false;
+//    else if (left.getHeight() != right.getHeight())
+//        return false;
+//    else
+//        return true;
+//}
+
+// =====================================================================
+
+// Diese Realisierung setzt voraus, dass die Klasse Rectangle
+// die globale Funktion / den globalen Operater 
+// als 'friend' akzeptiert / deklariert!
+// 
+// Anders formuliert: Die Klasse Rectangle (ihr Entwickler) weiß davon.
+
+bool operator == (Rectangle left, Rectangle right)
+{
+    if (left.m_top != right.m_top)
+        return false;
+    else if (left.m_left != right.m_left)
+        return false;
+    else if (left.m_width != right.m_width)
+        return false;
+    else if (left.m_height != right.m_height)
+        return false;
+    else
+        return true;
+}

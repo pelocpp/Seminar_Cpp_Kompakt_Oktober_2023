@@ -226,6 +226,30 @@ a) Bei 'const' - Methoden kann ein Compiler (Code-Generator) besser OPTIMIEREN.
 
 b) Zu unserem eigenen Schutz :)
 
+============================================================
+
+Überladen von Operatoren
+
+Was versteht man darunter?
+
+Die in C/C++ vorhandenen Operatoren (+, *, ==, !=, ) 
+für die elementaren Datentypen (int, double, ...)
+können auch auf Objekte angewendet werden,
+wenn in der jeweiligen Klasse der Operator realisiert wird.
+
+Wie wird in Operator überladen?
+
+Ganz einfach: Wie eine Methode !
+
+Welchen Namen hat diese Methode?  operator ==
+
+Vorsicht: Das Überladen eines Operators solle INTUITIV sein!!!
+
+Rectangle r1, r2, r3;
+
+// Ginge datentechnisch
+
+r1 = r2 + r3;   // NEIN, das ist nicht intuitiv !!!!
 
 
 

@@ -2,6 +2,8 @@
 
 class Rectangle
 {
+    friend bool operator == (Rectangle left, Rectangle right);
+
 private:
     double m_top;
     double m_left;
@@ -31,4 +33,16 @@ public:
     bool isSquare() const;
     Rectangle intersection(Rectangle rect) const;
     void print() const;
+    bool equals(Rectangle other);
+
+    // operators
+    //bool operator== (Rectangle other);
+    //bool operator!= (Rectangle other);
 };
+
+// ==================================================
+
+// global operator
+bool operator == (Rectangle left, Rectangle right);
+
+// ==================================================

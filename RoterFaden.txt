@@ -50,6 +50,11 @@ Objekt-Orientierung:
 == Schlüsselwort 'const'
 
 == Überladen von Operatoren
+     2 Möglichkeiten
+      i)  Als "Methode" der Klasse
+      ii) Als globale Funktion (ggf. mit 'friend')
+
+
 
 
 

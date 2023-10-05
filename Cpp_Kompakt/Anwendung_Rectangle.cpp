@@ -41,10 +41,71 @@ void test04_intersection()
     rect.print();
 }
 
+//void test05_equals()
+//{
+//    Rectangle rect1(1, 1, 4, 5);
+//    Rectangle rect2(1, 1, 4, 5);
+//
+//    bool istGleich;
+//    istGleich = rect1.equals(rect2);
+//    std::cout << istGleich << std::endl;
+//
+//    rect2.setHeight(10);
+//    istGleich = rect1.equals(rect2);
+//    std::cout << istGleich << std::endl;
+//
+//    // Frage:
+//    //int n1, n2;
+//
+//    //if (n1 == n2) // ...  Operatoren-Schreibweise : Infix: Operator steht in der Mitte
+//
+//    if (rect1 != rect2) {
+//        std::cout << "Die beiden Rechtecke sind nicht gleich" << std::endl;
+//    }
+//    else {
+//        std::cout << "Die beiden Rechtecke sind gleich" << std::endl;
+//    }
+//
+//    // Nur der Spielerei halber:
+//
+//    bool b;
+//    b = rect1.operator== (rect2);   // Methoden-Schreibweise
+//
+//    if (b) {
+//        std::cout << "Die beiden Rechtecke sind gleich" << std::endl;
+//    }
+//    else {
+//        std::cout << "Die beiden Rechtecke sind nicht gleich" << std::endl;
+//    }
+//}
+
+void test06_equals()
+{
+    Rectangle rect1(1, 1, 4, 5);
+    Rectangle rect2(1, 1, 4, 5);
+
+    bool istGleich;
+
+    // istGleich = vergleiche(rect1, rect2);
+    istGleich = (rect1 == rect2);
+
+    // NUR DER SPIELEREIN HALBER
+    istGleich = operator== (rect1, rect2);
+
+    std::cout << istGleich << std::endl;
+
+    rect2.setHeight(10);
+    // istGleich = vergleiche(rect1, rect2);
+    istGleich = (rect1 == rect2);
+    std::cout << istGleich << std::endl;
+}
+
 void test_rechtecke() 
 {
-    test01_ctors();
-    test02_methods();
-    test03_move();
-    test04_intersection();
+    //test01_ctors();
+    //test02_methods();
+    //test03_move();
+    //test04_intersection();
+    //test05_equals();
+    test06_equals();
 }
