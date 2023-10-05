@@ -14,16 +14,17 @@ public:
     Rectangle(double top, double left, double width, double height);
 
     // getter/setter
-    double getTop();
-    double getLeft();
-    double getWidth();
-    double getHeight();
-    void setTop(double);
-    void setLeft(double);
-    void setWidth(double);
-    void setHeight(double);
+    double getTop() const;
+    double getLeft() const;
+    double getWidth() const;
+    double getHeight() const;
 
-    // public interface
+    void setTop(double top);
+    void setLeft(double left);
+    void setWidth(double width);
+    void setHeight(double height);
+
+    // public interface // methods
     void moveTo(int newLeft, int newTop);
     double circumference() const;
     double area() const;

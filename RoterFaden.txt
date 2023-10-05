@@ -1,6 +1,9 @@
 Parcours durch C/C++:
 =====================
 
+Grundlagen von C++:
+-------------------
+
 Variablen 
 Datentypen
 
@@ -27,7 +30,26 @@ Aufbau eine C/C++-Programms
 -- main
 -- Vorwärtsdeklaration
 
+Objekt-Orientierung:
+--------------------
 
+== Klassen und Objekte
+
+== Instanzvariablen und Methoden
+
+== Konstruktoren (Objekt-Erzeugung)
+
+== Zugriffsschutz (private, public)
+
+== getter / setter - Methoden
+
+== Punkt-Operator ('.')
+
+== Überladen von Methoden (am Beispiel: Konstruktoren)
+
+== Schlüsselwort 'const'
+
+== Überladen von Operatoren
 
 
 

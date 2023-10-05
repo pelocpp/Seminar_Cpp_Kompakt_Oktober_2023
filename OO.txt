@@ -210,4 +210,22 @@ g) Schnitt zweier Rechtecke:
 
 "Transfer"
 
+============================================================
+
+'const' Schlüsselwort
+
+== Objekt:  Daten // haben einen Zustand // State
+
+Interesse: Verändert sich der State bei einem Methodenaufruf oder nicht ????
+
+Wenn nicht: Dann sollte man eine derartige Methode als 'const' kennzeichnen!
+
+Wozu:  
+
+a) Bei 'const' - Methoden kann ein Compiler (Code-Generator) besser OPTIMIEREN.
+
+b) Zu unserem eigenen Schutz :)
+
+
+
 

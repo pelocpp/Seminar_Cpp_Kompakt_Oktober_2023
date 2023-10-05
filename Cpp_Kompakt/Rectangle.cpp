@@ -26,10 +26,10 @@ Rectangle::Rectangle(double top, double left, double width, double height)
 }
 
 // getter/setter
-double Rectangle::getTop() { return m_top; }
-double Rectangle::getLeft() { return m_left; }
-double Rectangle::getWidth() { return m_width; }
-double Rectangle::getHeight() { return m_height; }
+double Rectangle::getTop() const { return m_top; }
+double Rectangle::getLeft() const { return m_left; }
+double Rectangle::getWidth() const { return m_width; }
+double Rectangle::getHeight() const { return m_height; }
 
 void Rectangle::setTop(double top)
 {
@@ -64,13 +64,13 @@ void Rectangle::setHeight(double height)
 // methods
 void Rectangle::moveTo(int newLeft, int newTop)
 {
-    m_top = newLeft;
+    m_top = newLeft; 
     m_left = newTop;
 }
 
 double Rectangle::circumference() const
 {
-    return 2 * (m_width + m_height);
+    return 2.0 * (m_width + m_height);
 }
 
 double Rectangle::area() const
@@ -80,7 +80,12 @@ double Rectangle::area() const
 
 bool Rectangle::isSquare() const 
 {
-    return m_width == m_height;
+    bool result;
+    result = (m_width == m_height);
+    return result;
+
+    // oder kürzer:
+    // return m_width == m_height;
 }
 
 Rectangle Rectangle::intersection(Rectangle rect) const
@@ -126,6 +131,7 @@ Rectangle Rectangle::intersection(Rectangle rect) const
     }
 
     Rectangle result (left, top, width, height);
+
     return result;
 }
 
