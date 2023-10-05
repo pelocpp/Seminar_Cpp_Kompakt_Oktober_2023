@@ -170,5 +170,44 @@ a) Im Quellcode
 
 b) Debugger
 
-
 ============================================================
+
+Übung:
+-----
+
+Rechtecke // Ebene // Graphisches System
+
+Daten:
+
+Position:
+Linke, obere Ecke sein:  m_left, m_top
+
+Breite, Höhe:  m_width, m_height
+
+Datentyp: int oder double
+
+Methoden // Verhalten:
+
+a) Verschieben
+void moveTo (int newLeft, int newTop) ==> m_left, m_top neu gesetzt
+
+b) Fläche:
+area ==> Fläche des Rechtecks
+
+c) Umfang:
+circumference ==> Umfang des Rechtecks
+
+d) Ausgabe in der Konsole:
+print
+
+e) Konstruktoren:
+Achtung:  Die Werte für Breite und Höhe müssen positiv sein.
+
+f) getter / setter:
+Es genügt für die Breite und Höhe (positiv sein)
+
+g) Schnitt zweier Rechtecke:
+
+"Transfer"
+
+
