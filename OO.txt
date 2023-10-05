@@ -1,0 +1,174 @@
+C++ Kompakt
+===========
+
+Objekt-Orientierung
+
+Neue Konzepte:  Klasse und Objekt
+
+============================================================
+
+Was ist eine Klasse ?
+
+Beschreibt das Aussehen (Daten, Methoden) eines Objekts
+
+(( Bauplan, Schablone, Beschreibung ))
+
+============================================================
+
+Was ist ein Objekt ?
+
+== Enthält Daten:
+
+     Student: Vorname, Nachname, Adresse, Alter, Noten, ...
+
+== Enthält Methoden:
+
+     Funktionen, die mit eben diesen Daten arbeiten 
+     Auf diese Daten zugreifen
+
+     Beispiel:  fuegeNoteHinzu (Fach, Note);
+                aendereAdresse (Stadt, Strasse, Hausnummer);
+
+============================================================
+
+Weitere Konzepte:
+
+== Schutz der Daten, Zugriffsschutz
+
+   Beispiel:   Student;
+   
+               int age;
+
+               age = -123;
+
+               Das kann man in C++ verhindern.
+
+============================================================
+
+Beispiel:   Uhrzeit / Time
+
+Stunden, Minuten, Sekunden
+
+Umsetzung in C++:   // Schreibweise 
+
+2 Dateien:  
+
+a) Header-Datei:   Hier wird die Klasse beschrieben (Daten und Methoden).
+
+   Endung der Datei: .h
+
+   Methoden: Nur die Schnittstelle.
+
+b) Realisierungs-Datei: Hier werden die Methoden realisiert.
+
+   Endung der Datei: .cpp
+
+   Kann - bei Auslieferung an Kunden - in einer Bibliothek (.lib)
+   abgelegt werden (Maschinencode).
+
+   ==> Der Kunde bekommt nicht das Know-How der Realisierung (.cpp)
+
+============================================================
+
+Achtung:
+
+Endung der Datei: .c
+
+Dies ist nur für eine Datei mit Inhalt "Programmiersprache C" zulässig
+
+==> Es wird der C-Compiler gestartet (nicht der C++ Compiler)
+
+Das wollen wir - zu 99% - NICHT.
+
+============================================================
+
+Achtung:
+
+Das Semikolon ; am Ende eines Klassen-Definition 
+kann NICHT weggelassen werden !!!
+
+============================================================
+
+Anlegen, Erzeugen von Objekten:
+
+Prinzipiell wie Variablen, Arrays oder Strukturen ...
+
+============================================================
+
+Feature der OO:
+
+== SCHUTZ der Daten
+
+== Ein Objekt enthält zu JEDEM ZEITPUNKT seines Lebens GÜLTIGE Daten.
+
+== Aber: Wir (Programmierer) müssen das realisieren.
+
+== Im Vergleich zu einer NICHT-OO Sprache:
+
+   Kapselung der Daten:
+   --------------------
+
+   Innerhalb des Objekts:
+
+      Bin ich in allen Methoden der Klasse (normalen Methode (print), setter/getter, Konstruktor)
+
+   Außerhalb des Objekts: ZB das Hauptprogramm / Anwendung: 
+
+      Bei uns im Beispiel: ersteSchritteMitTimeObjekten
+
+============================================================
+
+Objekt-Erzeugung:
+
+== Bereits hier sollten (initiale) Daten für den ZUSTAND des Objekts
+   bereit gestellt werden.
+
+== Hierfür gibt es spezielle Methoden: Zustand vorbelegen.
+
+== Name: Konstruktor : "konstruieren das Objekt"
+
+== Wie werden Konstruktor definiert:
+
+   a) Name der Methode == Name der Klasse
+   b) Rückgabetyp: KEINER (auch nicht void)
+
+== Eine Klasse hat / kann im Regelfall MEHRERE Konstruktoren haben:
+
+   Diese müssen sich durch die Anzahl der Parameter bzw. den Datentyp der Parameter
+   unterscheiden.
+
+   ===> Beim Aufruf / Objekterzeugung müssen die Parameter (Sonderfall: keine)
+        zweifelsfrei den zugeordneten Konstruktor erkennen lassen!
+
+============================================================
+
+Fein-Tuning:
+
+Namen von Parametern:
+
+Einbeziehung des Datentyps:
+
+Windows 32 System Programmierung:
+
+unsigned long ul_Counter;
+
+Style Guide:
+
+int i_Counter;
+
+Globale Variablen:
+
+int g_Counter;
+
+Einheitlichkeit: Hat Vorteile
+
+============================================================
+
+Der this-Zeiger :
+
+a) Im Quellcode
+
+b) Debugger
+
+
+============================================================

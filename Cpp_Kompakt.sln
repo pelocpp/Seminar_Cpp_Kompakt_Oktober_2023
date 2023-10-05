@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{9814AB76-94BA-4DE3-A663-FE7E93915AEA}"
 	ProjectSection(SolutionItems) = preProject
 		Notizen.txt = Notizen.txt
+		OO.txt = OO.txt
 		Operatoren_Vorrang.jfif = Operatoren_Vorrang.jfif
 		RoterFaden.txt = RoterFaden.txt
 		Uebung.txt = Uebung.txt
