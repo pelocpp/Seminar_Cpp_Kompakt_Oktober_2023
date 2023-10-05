@@ -27,12 +27,21 @@
     <ClCompile Include="Time.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="AnwendungTime.cpp">
+    <ClCompile Include="Anwendung_Time.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Rectangle.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Anwendung_Rectangle.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Time.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Rectangle.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

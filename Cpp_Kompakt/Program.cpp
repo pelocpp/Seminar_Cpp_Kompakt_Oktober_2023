@@ -22,12 +22,13 @@ void ersteSchritteMitTimeObjekten();
 
 // Übungen
 void teufel();
+void test_rechtecke();
 
 // ======================================================
 
 int main()
 {
-	ersteSchritteMitTimeObjekten();
+	test_rechtecke();
 
 	return 1;
 }
