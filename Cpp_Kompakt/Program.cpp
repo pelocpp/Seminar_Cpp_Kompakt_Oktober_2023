@@ -15,20 +15,24 @@ void test_switch();
 void test_break_continue();
 void test_typ_wandlung();
 void test_divisionen();
-void zinsen();
+void ausgabeZumErsten();
+void operator_links_shift();
+void operator_increment();
+void test_namespaces();
 
 // OO
 void ersteSchritteMitTimeObjekten();
 
 // Übungen
 void teufel();
+void zinsen();
 void test_rechtecke();
 
 // ======================================================
 
 int main()
 {
-	test_rechtecke();
+	test_namespaces();
 
 	return 1;
 }

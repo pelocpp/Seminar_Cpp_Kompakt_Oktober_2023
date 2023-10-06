@@ -131,6 +131,7 @@
     <ClCompile Include="Anwendung_Time.cpp" />
     <ClCompile Include="ErsteSchritte.cpp" />
     <ClCompile Include="Exercises.cpp" />
+    <ClCompile Include="Namespaces.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Time.cpp" />

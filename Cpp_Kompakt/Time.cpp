@@ -87,9 +87,6 @@ int Time::getSecond()
 	return m_second;
 }
 
-
-
-
 void Time::print()
 {
 	std::cout << m_hour << ":" << m_minute << ":" << m_second << std::endl;
@@ -98,10 +95,50 @@ void Time::print()
 void Time::increment()
 {
 	// eine Sekunde dazuzählen ... to be Done
+
+	m_second = m_second + 1;
+	// oder
+	// m_second++;
+
+	// Beispiel: sekunden == 43;  ==> 44
+
+	if (m_second == 60) {
+
+		m_second = 0;
+		m_minute++;
+
+		if (m_minute == 60) {
+
+			m_minute = 0;
+			m_hour++;
+
+			if (m_hour == 24) {
+				
+				m_hour = 0;
+			}
+		}
+	}
 }
 
 int Time::toSeconds()
 {
 	// wandelt eine Uhrzeit in Sekunden um
-	return -1;
+	// 9:7:20 ==> 20 + 60*7 + 3600 * 9
+
+	int seconds = m_hour * 3600 + m_minute * 60 + m_second;
+	return seconds;
+
+	// oder
+
+	// return m_hour * 3600 + m_minute * 60 + m_second;
 }
+
+// ==================================================
+
+// global operator
+void operator << (std::ostream& os, Time t)
+{
+	os << t.getHour() << ":" << t.getMinute() << ":" << t.getSecond();
+}
+
+// ==================================================

@@ -27,6 +27,22 @@ ii) Github.com
 
 ====================================
 
+3. Tag:
+
+== ++ Operator
+
+== Ein-/Ausgabe (Operator <<)
+
+== Namensräume
+
+== OO an einem realen Beispiel: Klasse std::string
+
+== Vererbung
+
+== Standard-Bibliothek
+
+====================================
+
 Getting Started:
 
 ===> "Hello World"
@@ -299,19 +315,184 @@ a) Ganzzahlige Division
 b) Gleitpunkt Division
 
 ======================================================
-Prozeduler Anteil von C++
+Prozeduraler Anteil von C++
 ======================================================
 
-3. Tag:
+Ausgabe:
+
+std::cout: Stellvertreter einer Konsole.
+
+Für elementare Variablen (int, float, ...) ist der << Operator vordefiniert.
+
+Für Klassen kann ich den << Operator selbst implementieren.
+
+
+
+Beispiel:
+
+Time jetzt;
+
+std::cout << jetzt;
+
+Operator: << 
+
+Grundlagen des << Operators für die Ausgabe eines Objekts
+
+1. Operand: std::cout Typ: class ostream
+2. Operand: jetzt     Typ: class Time
+
+Diese Betrachtung geht nur als "globale" Funktion // Überladen des Operators:
+
+Erster Ansatz:
+
+void operator << (std::ostream os, Time right);
+
+Fast richtig, aber:
+
+Der erste Parameter muss eine ADRESSE eines Objekts sein -- d.h.: keine KOPIE
+
+Besser:
+
+void operator << (std::ostream& os, Time right);
+
+Das & nach dem Typ std::ostream bedeutet, dass das Objekt (Konsole) durch eine
+Adresse übergeben wird (keine Kopie).
+
+
+Voreinstellung für Parameter // Stellvertreter:
+     Es handelt sich um eine KOPIE
+     des Arguments beim Aufruf !
+
+Von dem Stellvertreter des Konsole (std::cout) darf / kann man keine KOPIE anlegen.
+
+
+
+
+======================================================
+
+Grundlagen des << Operators für die binäre Verarbeitung:
+
+Noch ein Beispiel:
+
+int n = 57;
+
+Binär:
+
+11 1001
+
+RECHTS:
+
+1 * 2 hoch 0 + 0 * 2 hoch 1 + 0 * 2 hoch 2 + 1 * 2 hoch 3 + 1 * 2 hoch 4 + 1 * 2 hoch 5 = 
+
+1          + 0            + 0            + 8 +          16 +           * 32 = 57
+
+Begriff:  2-er Komplement // Zweierkomplement
+
+
+Bit-Verarbeitung:   Shift-Operationen:
+
+int n = 13;  
+
+Binar:  1101 
+
+n = n << 1;
+
+1101  wird zu 11010   // rechts wird eine Null reingezogen 
+
+n wird zu 26
+
+Auch: 
+
+n = n << 2;
+
+110100   == 52
+
+===============================================
+
+Besonderheit des ++ Operators (gilt auch für --):
+
+Es gibt diesen Operator ZWEIMAL:
+
+a) als Prefix-Operator:  ++ n;
+
+b) als Postfix-Operator: n ++;
+
+Was ist der Unterschied:
+
+a) In einer Stand-Alone Anweisung:
+
+++n;
+
+oder 
+
+n++;
+
+KEINER !!!!!!!!!
+
+b) In einer Wertzuweisung:
+
+i) 	m = ++n;   // Prefix-Variante
+
+    Hier wird ZUERST n INKREMENTIERT, und dann das Ergebnis an
+    m zugewiesen.
+
+ii) m = n++;   // Postfix-Variante:
+
+    Hier wird ZUERST n an m zugewiesen -- und danach n inkrementiert.
+
+
+=================================================================
+
+Namenraum:
+
+Deklaration:
+
+namespace Variant_Product {
+
+	void tueWasWichtiges() {
+
+		std::cout << "Dies ist meine Realisierung" << std::endl;
+	}
+}
+
+Ist von Interesse, wenn ich 
+
+eine Funktion // eine Klasse 
+
+in der Realisierung aufteilen möchte (Produkt-Betrieb, Test-Betrieb, ...)
+
+--------------------------
+
+Es gibt einen Namensraum, der für uns Anwender nicht zulässig ist:
+
+namespace std   <====== Reserviert für C++ Standard-Klassen, Objekte, Funktion
+
+                Reserviert für die C++ Standard-Bibliothek
+
+=========================================================
+
+Frage bzw. Empfehlung:
+
+Go for 
+
+    std::cout << n;
+
+ODER
+
+	using namespace std;
+    ...
+    cout << n;
+
+Antwort: Go for 1. Variante:
+
+Nachteil der 2. Variante:
+
+Mit der using Anweisung bzgl. des Namensraums std
+
+wird eine "sehr große Türe" geöffnet.
+
+
+========================================================
 
 == OO an einem realen Beispiel: Klasse std::string
-
-== Namensräume
-
-== Ein-/Ausgabe (Operator <<)
-
-== Vererbung
-
-== Standard-Bibliothek
-
 

@@ -16,11 +16,46 @@ void test_break_continue();
 void test_typ_wandlung();
 void test_divisionen();
 void zinsen();
+void operator_links_shift();
 
 // Übungen
 void teufel();
 
 // ======================================================
+
+void operator_links_shift() {
+
+	int n = 13;
+
+	n = n << 2;
+}
+
+void operator_increment() {
+
+	int n = 13;
+
+	// Stand-Alone
+	n++;
+	++n;
+
+	// Wertzuweisung
+	int m;
+	m = ++n;            // Prefix
+	// versus
+	m = n++;            // Postfix
+
+	// Empfehlung (vielen Style Guides)
+
+	++n;
+	m = n;
+
+	// ODER -  Keep-it-Simple - Zerlegen 
+
+	m = n;
+	++n;
+
+	std::cout << "Ende.";
+}
 
 void test()
 {

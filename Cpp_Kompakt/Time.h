@@ -32,3 +32,11 @@ public:
 	void increment();   // zählt eine Sekunde dazu
 	int toSeconds();    // wandelt eine Uhrzeit in Sekunden um
 };
+
+// ==================================================
+
+// global operator
+void operator << (std::ostream& os, Time right);
+
+// ==================================================
+

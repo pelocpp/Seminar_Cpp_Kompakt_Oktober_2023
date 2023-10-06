@@ -1,9 +1,12 @@
+#include <iostream>
 #include <string>
 
 #include "Time.h"
 
 void ersteSchritteMitTimeObjekten()
 {
+	using namespace std;
+
 	Time jetzt;             // Hierfür benötigen wir den Standard-Konstruktor: Keine Parameter.
 
 	//jetzt.hour = 10;      // Zugriff auf eine Variable des Objekts
@@ -15,6 +18,9 @@ void ersteSchritteMitTimeObjekten()
 	jetzt.setSecond(20);
 
 	jetzt.print();       // Aufruf einer Methode
+
+	// cout ist Repräsentant einer Konsole 
+	cout << jetzt;
 
 	// int wievieleStunden = jetzt.hour;
 	int wievieleStunden = jetzt.getHour();
@@ -32,7 +38,14 @@ void ersteSchritteMitTimeObjekten()
 
 void zweitesBeispielZuObjekten()
 {
-	std::string zeichenkette;
+	std::string zeichenkette;	
+}
 
-	
+
+void ausgabeZumErsten()
+{
+	std::cout.write("ABC", 3);
+
+	// Operator: <<
+	std::cout << "ABCDE" << '\n' << 123 << std::endl << 99.99 << '*';
 }
