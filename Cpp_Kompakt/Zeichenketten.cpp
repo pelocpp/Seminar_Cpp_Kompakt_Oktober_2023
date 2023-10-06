@@ -23,8 +23,6 @@ void test_zeichenketten_01() {
 	}
 }
 
-
-
 void test_zeichenketten () {
 
 	// Klasse std::string

@@ -19,6 +19,15 @@ C#
 
 ====================================
 
+Literatur:
+
+"Jetzt lerne ich C++" von Jesse Liberty
+
+"C++ Einführungskurs" Eckel, Bruce
+
+====================================
+
+
 Tools:
 
 i) Visual Studio 
@@ -38,6 +47,8 @@ ii) Github.com
 == OO an einem realen Beispiel: Klasse std::string
 
 == Vererbung
+
+== Templates
 
 == Standard-Bibliothek
 
@@ -570,10 +581,149 @@ c) Neue Datentypen definiert, die nur POSITIVE Zahlen darstellen:
 
    Auf den meisten Systemen: size_t = unsigned __int64 
 
+================================================================
+
+Vorbereitung:  Vererbung.
+
+Wann kann / sollte ich Vererbung einsetzen ??????????????????????
+
+Überlegung:
+
+Klasse Rectangle:          Rechteck mit linker, oberer Ecke und Breite und Höhe
+
+Klasse ColoredRectangle:   Rechteck mit linker, oberer Ecke und Breite und Höhe
+                           und einer Füllfarbe
 
 
+Satz:  Ein ColoredRectangle ist ein Rectangle mit Füllfarbe
+
+Satz:  Ein ColoredRectangle ist ein Rectangle
+
+Beziehung // Relationship:  ist-ein Beziehung // is-a Relationship
 
 
+Kontrollfrage:
+
+Klasse Point:          // 2-dim Ebene: x,y
+
+Klasse Line:           Linie in der 2-dim Ebene
+
+Satz:  Eine Linie besteht aus 2 ( oder mehreren ) Punkten
+
+Ginge: Ein Punkt ist eine Linie :  NEIN 
+
+       Eine Linie ist ein Punkt:   NEIN
+
+ABER:   Eine Linie hat 2 Punkte (Anfangs- und End-Punkt):
+
+       hat-ein Beziehung (Singular / Plural)  // has-a Relationship
+
+       Stellt den Bezug zu Instanz-Variablen dar.
+
+class Line {
+
+    Point m_begin;
+    Point m_end;
+};
+
+Grundlagen der Vererbung
+------------------------
+
+Was gewinne ich?
+
+== Wiederverwendung von Daten
+
+== Wiederverwendung von Code / Methoden
+
+Details:
+
+Neue Zugriffsklasse 'protected':
+
+Nach innen wie 'public'
+Von außen wie 'private'
+
+Abgrenzung / Unterschied zu friend:   friend im Umfeld der Vererbung nicht sinnvoll.
+
+Zu
+
+Wiederverwendung von Code / Methoden:
+
+3 Varianten der "Vererbung":
+----------------------------
+
+a) Eine Kind-Klasse / abgeleiteten Klasse (derived class) "erbt" eine Methode.
+
+b) Eine Methode der Vaterklasse wird in der Kindklasse "überschrieben":
+
+   Die Methode der Vaterklasse wird "ersetzt" / "ausgetauscht"
+
+   ===> Frage: Ist das konform zur Ist-Ein Beziehung ??? Hmmmm
+
+c) Eine Methode der Vaterklasse wird in der Kindklasse "überschrieben",
+
+   die Methode der Vaterklasse wird dabei in der überschriebenen Methode aufgerufen:
+
+   Die Methode der Vaterklasse wird "erweitert".
+
+   ===> Ist eine häufige Anwendung.
+
+=======================================================
+
+C++:   Idiome // Paradigmen
+
+== Objekt-orientierte Programmierung
+
+== Generische Programmierung
+
+   i) Datentypen bei der Definition einer Klasse zunächst einmal "allgemein" halten
+
+   ii) Erst bei Gebrauch einer Klasse: Festlegung auf einen konkreten Datentyp
 
 
+=======================================================
 
+Standard-Bibliothek:   Rein generische Bibliothek.
+
+STL: Standard Template Library
+
+C++:                             Bjarne Stroustrup
+STL / Generische Programmierung: Alexander Stepanov
+
+== Container
+== Iteratoren
+== Algorithmen
+
+Container:
+
+Container sind vorgefertigte Klassen, um Daten zu verwalten.
+
+== Eingebaut in C/C++: Array
+
+== Array: Nachteile
+
+   a) ein Datentyp
+
+   b) Feste Länge
+
+   c) Element entfernen:  Lücke (-1, ...)
+
+   d) Suchen ... kann lange dauern  ( in einem sortierten Baum ist Suchen schneller)
+
+=====> "Algorithmen und Datenstrukturen"
+
+== Bäume (Sortiert), Listen, Hash-Tabellen (Index)
+
+== Ist alles in der STL vorhanden.
+
+== Beispiel: Array ohne Längenbegrenzung // std::vector
+
+
+Was ist ein Iterator ????????????
+
+Beschreibt eine POSITION in einem Container.
+
+Für einen Iterator gibt es (minimal) 3 Operatoren:
+
+a) *        ==> Gib mir den Wert
+b) ++       ==> Gehe zur nächsten Position
+a) ==, !=   ==> Vergleich zweier Positionen

@@ -20,6 +20,8 @@ void operator_links_shift();
 void operator_increment();
 void test_namespaces();
 void test_zeichenketten();
+void test_vererbung();
+void test_schablonen();
 
 // OO
 void ersteSchritteMitTimeObjekten();
@@ -28,13 +30,13 @@ void ersteSchritteMitTimeObjekten();
 void teufel();
 void zinsen();
 void test_rechtecke();
+void test_stl();
 
 // ======================================================
 
 int main()
 {
-	test_zeichenketten();
-
+	test_stl();
 	return 1;
 }
 

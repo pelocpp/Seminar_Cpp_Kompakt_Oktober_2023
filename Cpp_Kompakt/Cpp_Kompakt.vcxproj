@@ -134,7 +134,10 @@
     <ClCompile Include="Namespaces.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Schablonen.cpp" />
+    <ClCompile Include="STL.cpp" />
     <ClCompile Include="Time.cpp" />
+    <ClCompile Include="Vererbung.cpp" />
     <ClCompile Include="Zeichenketten.cpp" />
   </ItemGroup>
   <ItemGroup>

@@ -55,6 +55,34 @@ Objekt-Orientierung:
       ii) Als globale Funktion (ggf. mit 'friend')
 
 
+Vererbung:
+---------
+
+== hat-ein und ist-ein Beziehung
+
+== Basis- und abgeleitete Klassen (Kind- und Vater-Klasse)
+
+== Konstuktoren im Umfeld der Vererbung
+
+== 'protected': Zugriff auf Elemente der Vater-Klasse
+
+== Methoden erben, austauschen oder erweitern
+
+== Wiederverwendung von Daten und Code
+
+===========================================================
+
+Generische Programmierung
+
+== Klassentemplates
+
+===========================================================
+
+STL: Standard Template Library
+
+===========================================================
+
+
 
 
 
