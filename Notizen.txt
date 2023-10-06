@@ -496,3 +496,84 @@ wird eine "sehr große Türe" geöffnet.
 
 == OO an einem realen Beispiel: Klasse std::string
 
+Was ist ein Zeichen?   Ein Wert aus der ASCII-Tabelle (Zahl, Zeichen)
+
+Ein Zeichen: Singular: Ein einzelnes Zeichen.   zB  '*'
+
+Datentyp:  char 
+
+Anmerkung: Zwischen Zeichen (char) und ganzen Zahlen (int)
+  gibt es einen Zusammenhang:
+
+Zeichen werden durch eine ASCII-Tabelle festgelegt:
+
+Wertebereich:  0 bis 127
+
+Bemerkung:
+
+Hierzu könnte man ein eigenes Seminar gestalten:
+
+Zeichensätze: UNICODE  ==> Für alle Fremdsprachen
+
+Was ist eine Zeichenkette?
+ 
+ Viele Zeichen:
+
+Datentyp: 
+
+In C:      char*   // Anfangsadresse im Speicher
+
+In C++:    Klasse std::string
+
+Wie kann man eine KONSTANTE Zeichenkette schreiben:  "12345"
+
+Wo sind Standard-Klassen beschrieben:
+
+Online-Referenz:  NICHT EINFACH ZU LESEN
+
+https://en.cppreference.com/w/cpp
+
+Nicht zum Lernen geeignet.
+
+Aber: Sie ist AKTUELL.
+
+Oder auch:
+
+https://learn.microsoft.com/en-us/
+
+bzw:
+
+https://learn.microsoft.com/en-us/cpp/standard-library/string?view=msvc-170
+
+
+======================================================
+
+Was ist 'size_t':
+
+a) Historie:
+
+   Es gibt den Datentyp 'int': Perfekt, ganze Zahlen.
+
+b) Diskussion:
+
+   Länge eines Objekts:  Hmmm, eine Länge ist immer positiv.
+
+   Aber: Datentyp 'int' kann ja auch negative Zahlen enthalten.
+
+c) Neue Datentypen definiert, die nur POSITIVE Zahlen darstellen:
+
+   i) unsigned int n;   // nur positiv
+
+   ii) size_t :  Ist positiv UND: deckt intern die Breite des Akkumulators ab.
+
+       Keine Wandlung // sehr effizient.
+
+   Auf den meisten Systemen: size_t = unsigned __int64 
+
+
+
+
+
+
+
+

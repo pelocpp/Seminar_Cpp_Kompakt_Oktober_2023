@@ -19,6 +19,7 @@ void ausgabeZumErsten();
 void operator_links_shift();
 void operator_increment();
 void test_namespaces();
+void test_zeichenketten();
 
 // OO
 void ersteSchritteMitTimeObjekten();
@@ -32,7 +33,7 @@ void test_rechtecke();
 
 int main()
 {
-	test_namespaces();
+	test_zeichenketten();
 
 	return 1;
 }
